@@ -1,9 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page by Eka (WPH-16)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shirt — New Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Shirt, home">
+          <img class="brand-img" src="./assets/images_index/logo.png" />
+        </a>
+
+        <nav class="header-left">
+          <a class="btn btn-light icon-left" href="#">
+            <img
+              class="icon-left"
+              src="./assets/images_index/grid.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>Catalog</span>
+          </a>
+
+          <form class="search" role="search">
+            <img
+              class="icon-left"
+              src="./assets/images_index/search.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <input
+              type="search"
+              placeholder="Search"
+              aria-label="Search products"
+            />
+          </form>
+        </nav>
+
+        <div class="header-right">
+          <a class="icon-btn" href="#" aria-label="Cart with 6 items">
+            <img
+              class="icon-left"
+              src="./assets/images_index/cart.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="badge">89</span>
+          </a>
+          <a class="profile" href="#">
+            <img
+              class="icon-left"
+              src="./assets/images_index/user.png"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>Team A</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-people" aria-hidden="true">
+          <img src="./assets/images_index/p02.png" alt="" />
+        </div>
+        <div class="hero-copy">
+          <h1>NEW COLLECTION</h1>
+          <p>Stylish men’s apparel for every occasion</p>
+          <a class="btn btn-dark" href="#">Get Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+    <main class="container">
+      <h2 class="section-title">Featured Product</h2>
+
+      <section class="card-grid">
+        <!-- Card -->
+        <article class="card">
+          <img
+            src="./assets/images_index/p1.png"
+            alt="Sneakers Court Minimalis"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Sneakers Court Minimalis</h3>
+            <div class="price">Rp275.000</div>
+            <div class="rating">
+              <span class="star" aria-hidden="true">★</span
+              ><span class="sr-only">Rating:</span> 4.9
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./assets/images_index/p2.png"
+            alt="Kaos Crewneck Esensial"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Kaos Crewneck Esensial</h3>
+            <div class="price">Rp800.000</div>
+            <div class="rating"><span class="star">★</span> 4.8</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./assets/images_index/p3.png" alt="Tas Selempang Klasik" />
+          <div class="card-body">
+            <h3 class="card-title">Tas Selempang Klasik</h3>
+            <div class="price">Rp1.600.000</div>
+            <div class="rating"><span class="star">★</span> 4.7</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./assets/images_index/p4.png" alt="Kaos Soft Touch" />
+          <div class="card-body">
+            <h3 class="card-title">Kaos Soft Touch</h3>
+            <div class="price">Rp650.000</div>
+            <div class="rating"><span class="star">★</span> 4.6</div>
+          </div>
+        </article>
+
+        <!-- more cards here ... -->
+        <article class="card">
+          <img src="./assets/images_index/p13.png" alt="Celana Pendek Chino" />
+          <div class="card-body">
+            <h3 class="card-title">Celana Pendek Chino</h3>
+            <div class="price">Rp120.000</div>
+            <div class="rating"><span class="star">★</span> 4.5</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./assets/images_index/p14.png"
+            alt="Topi Baseball 6-Panel"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Topi Baseball 6-Panel</h3>
+            <div class="price">Rp320.000</div>
+            <div class="rating"><span class="star">★</span> 4.7</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="./assets/images_index/p15.png" alt="Kaos Katun Premium" />
+          <div class="card-body">
+            <h3 class="card-title">Kaos Katun Premium</h3>
+            <div class="price">Rp1.100.000</div>
+            <div class="rating"><span class="star">★</span> 4.9</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="./assets/images_index/p16.png"
+            alt="Hoodie Pullover Fleece"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Hoodie Pullover Fleece</h3>
+            <div class="price">Rp275.000</div>
+            <div class="rating"><span class="star">★</span> 4.8</div>
+          </div>
+        </article>
+      </section>
+
+      <div class="center">
+        <a class="btn btn-light" href="#">Load More</a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Shirt, home">
+            <img class="brand-img" src="./assets/images_index/logo.png" />
+          </a>
+          <p>
+            Explore a realm of style with our fashion e-commerce platform, where
+            shopping is effortless. Enjoy a smooth journey with an extensive
+            selection of trendy apparel, all delivered directly to your home.
+          </p>
+
+          <!-- <div class="social"> -->
+          <!-- <span>Follow on Social Media</span> -->
+          <!-- <div class="social-row"> -->
+          <!-- <a href="#" aria-label="Facebook" -->
+          <!-- ><img src="./assets/images_index/fb.png" -->
+          <!-- /></a> -->
+          <!-- <a href="#" aria-label="Instagram">ig</a> -->
+          <!-- <a href="#" aria-label="LinkedIn">in</a> -->
+          <!-- <a href="#" aria-label="TikTok">t</a> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <div class="social">
+            <span>Follow on Social Media</span>
+            <div class="social-row">
+              <a href="#" aria-label="Facebook">
+                <img
+                  class="icon-20"
+                  src="./assets/images_index/fb1.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  class="icon-20"
+                  src="./assets/images_index/ig1.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  class="icon-20"
+                  src="./assets/images_index/in1.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="TikTok">
+                <img
+                  class="icon-20"
+                  src="./assets/images_index/tt1.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer-col">
+          <h4>E-Commerce</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms &amp; Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">How to Transact</a></li>
+            <li><a href="#">Payment Method</a></li>
+            <li><a href="#">How to Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> Shirt. All rights reserved.</small>
+      </div>
+      <script>
+        // year only; no other JS required
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
