@@ -1,9 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products Catalogue by Fuad Fadil (WPH-19)</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sneakers Court Minimalis – Shirt</title>
+    <link rel="stylesheet" href="./css/products.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <!-- one wide PNG that already includes the starburst + “Shirt” wordmark -->
+          <img
+            src="./assets/images_products/logo_shirt.png"
+            alt="Shirt"
+            class="brand-logo"
+          />
+        </a>
+
+        <a class="catalog" href="#">
+          <img src="./assets/images_products/icon-catalog.png" alt="" />
+          <span>Catalog</span>
+        </a>
+
+        <form class="search" role="search">
+          <img src="./assets/images_products/icon-search.png" alt="" />
+          <input type="search" placeholder="Search" aria-label="Search" />
+        </form>
+
+        <nav class="header-actions">
+          <a class="cart" href="#" aria-label="Cart">
+            <img src="./assets/images_products/icon-cart.png" alt="Cart" />
+            <span class="badge">6</span>
+          </a>
+          <a class="user" href="#">
+            <img src="./assets/images_products/icon-user.png" alt="User" />
+            <span>Team A</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="catalog">
+      <h1 class="page-title">Catalog</h1>
+
+      <section class="page">
+        <!-- FILTER (left) -->
+        <aside class="filter">
+          <div class="card">
+            <h3 class="card-title">FILTER</h3>
+
+            <div class="filter-group">
+              <h4>Categories</h4>
+              <label class="chk"
+                ><input type="checkbox" checked /> <span>All</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>Shoes</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>Clothes</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>Accessories</span></label
+              >
+            </div>
+
+            <div class="filter-group">
+              <h4>Price</h4>
+              <div class="input-prefix">
+                <span>Rp</span>
+                <input type="number" placeholder="Minimum Price" />
+              </div>
+              <div class="input-prefix">
+                <span>Rp</span>
+                <input type="number" placeholder="Maximum Price" />
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h4>Rating</h4>
+              <label class="chk"
+                ><input type="checkbox" /> <span>5</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>4</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>3</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>2</span></label
+              >
+              <label class="chk"
+                ><input type="checkbox" /> <span>1</span></label
+              >
+            </div>
+          </div>
+        </aside>
+
+        <!-- CONTENT (right) -->
+        <section class="content">
+          <div class="content-top">
+            <p class="muted">Showing <strong>160</strong> products</p>
+
+            <div class="sort">
+              <label for="sort-by">Sort</label>
+              <select id="sort-by">
+                <option>Latest</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Rating</option>
+                <option>Popular</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid">
+            <!-- CARD 1 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p1.png"
+                  alt="Sneakers Court Minimalis"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Sneakers Court Minimalis</h5>
+                <div class="price">Rp275.000</div>
+                <div class="rating" aria-label="4.9 out of 5">
+                  <span class="star">★</span> 4.9
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 2 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p2.png"
+                  alt="Kaos Crewneck Essensial"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Kaos Crewneck Essensial</h5>
+                <div class="price">Rp800.000</div>
+                <div class="rating" aria-label="4.8 out of 5">
+                  <span class="star">★</span> 4.8
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 3 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p3.png"
+                  alt="Tas Selempang Klasik"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Tas Selempang Klasik</h5>
+                <div class="price">Rp1.600.000</div>
+                <div class="rating" aria-label="4.7 out of 5">
+                  <span class="star">★</span> 4.7
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 4 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p4.png"
+                  alt="Kaos Soft Touch"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Kaos Soft Touch</h5>
+                <div class="price">Rp650.000</div>
+                <div class="rating" aria-label="4.6 out of 5">
+                  <span class="star">★</span> 4.6
+                </div>
+              </div>
+            </article>
+
+            <!-- CARD 5 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p5.png"
+                  alt="Overshirt Utility"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Overshirt Utility</h5>
+                <div class="price">Rp375.000</div>
+                <div class="rating"><span class="star">★</span> 4.5</div>
+              </div>
+            </article>
+
+            <!-- CARD 6 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p6.png"
+                  alt="Sweater Rajut Cable"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Sweater Rajut Cable</h5>
+                <div class="price">Rp1.300.000</div>
+                <div class="rating"><span class="star">★</span> 4.8</div>
+              </div>
+            </article>
+
+            <!-- CARD 7 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p7.png"
+                  alt="Syal Wol Kotak"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Syal Wol Kotak</h5>
+                <div class="price">Rp220.000</div>
+                <div class="rating"><span class="star">★</span> 4.9</div>
+              </div>
+            </article>
+
+            <!-- CARD 8 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p8.png"
+                  alt="Syal Wol Solid"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Syal Wol Solid</h5>
+                <div class="price">Rp180.000</div>
+                <div class="rating"><span class="star">★</span> 4.7</div>
+              </div>
+            </article>
+
+            <!-- CARD 9 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p9.png"
+                  alt="Celana Panjang Tailored"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Celana Panjang Tailored</h5>
+                <div class="price">Rp2.200.000</div>
+                <div class="rating"><span class="star">★</span> 4.8</div>
+              </div>
+            </article>
+
+            <!-- CARD 10 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p10.png"
+                  alt="Sneakers Harian"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Sneakers Harian</h5>
+                <div class="price">Rp1.900.000</div>
+                <div class="rating"><span class="star">★</span> 4.9</div>
+              </div>
+            </article>
+
+            <!-- CARD 11 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p11.png"
+                  alt="Jaket Puffer Quilted"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Jaket Puffer Quilted</h5>
+                <div class="price">Rp450.000</div>
+                <div class="rating"><span class="star">★</span> 4.6</div>
+              </div>
+            </article>
+
+            <!-- CARD 12 -->
+            <article class="product-card">
+              <div class="thumb">
+                <img
+                  src="./assets/images_products/p12.png"
+                  alt="Kemeja Oxford"
+                />
+              </div>
+              <div class="meta">
+                <h5 class="name">Kemeja Oxford</h5>
+                <div class="price">Rp950.000</div>
+                <div class="rating"><span class="star">★</span> 4.8</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="load-more">
+            <button type="button" class="btn">Load More</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="/" aria-label="Shirt, home">
+            <img
+              class="brand-img"
+              src="./assets/images_products/logo_shirt.png"
+            />
+          </a>
+          <p>
+            Explore a realm of style with our fashion e-commerce platform, where
+            shopping is effortless. Enjoy a smooth journey with an extensive
+            selection of trendy apparel, all delivered directly to your home.
+          </p>
+          <!-- </div> -->
+          <div class="social">
+            <span>Follow on Social Media</span>
+            <div class="social-row">
+              <a href="#" aria-label="Facebook">
+                <img
+                  class="icon-20"
+                  src="./assets/images_products/logo_fb.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  class="icon-20"
+                  src="./assets/images_products/logo_ig.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <img
+                  class="icon-20"
+                  src="./assets/images_products/logo_in.png"
+                  alt=""
+                />
+              </a>
+              <a href="#" aria-label="TikTok">
+                <img
+                  class="icon-20"
+                  src="./assets/images_products/logo_tiktok.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer-col">
+          <h4>E-Commerce</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Terms &amp; Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">How to Transact</a></li>
+            <li><a href="#">Payment Method</a></li>
+            <li><a href="#">How to Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container footer-bottom">
+        <small>© <span id="year"></span> Shirt. All rights reserved.</small>
+      </div>
+      <script>
+        // year only; no other JS required
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
