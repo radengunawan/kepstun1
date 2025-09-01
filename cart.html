@@ -10,23 +10,27 @@
   <body class="body_card">
     <!------------------ Header ---------------------------------->
     <header class="header_card">
-      <div class="logo_header">
-        <img
-          class="img_header"
-          src="./assets/images_cart/logo.png"
-          alt="Logo"
-        />
-        <label class="text_header" for="Shirt">Shirt</label>
-      </div>
-      <div class="search_frame">
-        <div class="catalog">
+      <a href="/index.html">
+        <div class="logo_header">
           <img
-            src="./assets/images_cart/clog.png"
-            class="img_catalog"
-            alt="Catalog"
+            class="img_header"
+            src="./assets/images_cart/logo.png"
+            alt="Logo"
           />
-          <label class="text_catalog" for="Catalog">Catalog</label>
+          <label class="text_header" for="Shirt">Shirt</label>
         </div>
+      </a>
+      <div class="search_frame">
+        <a href="/products.html">
+          <div class="catalog">
+            <img
+              src="./assets/images_cart/clog.png"
+              class="img_catalog"
+              alt="Catalog"
+            />
+            <label class="text_catalog" for="Catalog">Catalog</label>
+          </div>
+        </a>
         <div class="search">
           <img
             src="./assets/images_cart/sh.png"
@@ -37,7 +41,9 @@
         </div>
       </div>
       <div class="frame">
-        <img src="./assets/images_cart/nt.png" alt="Notif" class="img_notif" />
+        <a href="/cart.html">
+          <img src="./assets/images_cart/nt.png" alt="Notif" class="img_notif"
+        /></a>
         <div class="account_container">
           <img
             src="./assets/images_cart/pp.png"
@@ -76,11 +82,12 @@
             </div>
 
             <div class="productInfo">
-              <img
-                src="./assets/images_cart/shoes.png"
-                alt="Shoes"
-                class="img_product"
-              />
+              <a href="/product-detail.html">
+                <img
+                  src="./assets/images_cart/shoes.png"
+                  alt="Shoes"
+                  class="img_product"
+              /></a>
               <div class="text_container">
                 <label class="productName" for="product"
                   >Sneakers Court Minimalis</label
@@ -356,7 +363,12 @@
           <label class="total_label" for="totallabel">Total</label>
           <label class="total_amount" for="totalamount">Rp275.000</label>
         </div>
-        <button class="btn_checkout">Checkout</button>
+        <button
+          onclick="document.location='checkout.html'"
+          class="btn_checkout"
+        >
+          Checkout
+        </button>
       </div>
     </main>
     <!------------------ Footer ---------------------------------->
